@@ -1,0 +1,77 @@
+.App {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.App__Hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.App__Hero-Banner-Group {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+}
+
+.App__Hero__Button-Group {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  width: 65%;
+}
+
+.App__Button {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  width: 145px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 3px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+}
+
+.App__Button:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer;
+}
+
+.App__Button:active {
+  position: relative;
+  top: 2px;
+}
+
+.App__Button:disabled {
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .App__Hero-Banner-Group {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    height: 100%;
+  }
+
+  .App__Hero-Banner-Group div {
+    height: 100%;
+  }  
+
+  .App__Hero-Banner-Group img {
+    width: auto;
+    height: 100%;
+  }
+
+  .App__Hero__Button-Group {
+    min-width: 860px; 
+    width: 100%;
+    top: 58%;
+  }
+}
